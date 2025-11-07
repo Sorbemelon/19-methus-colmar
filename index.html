@@ -15,6 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
 		/>
+		<link href="./style.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<style type="text/tailwindcss">
 			@theme {
@@ -29,10 +30,102 @@
 	</head>
 
 	<body class="w-screen min-h-dvh">
-		<h1
-			class="h-auto p-4 text-xl font-semibold text-center bg-mint-200 text-neutral-900 hover:scale-105 md:text-3xl md:bg-sky-600 md:text-sky-50 md:text-shadow-sm"
-		>
-			Welcome to <br class="md:hidden" />Colmar Academy
-		</h1>
+		<header>
+			<nav class="flex flex-row items-center justify-around bg-white h-16">
+				<div>
+					<img src="images/ic-logo.svg">
+				</div>
+				<div>
+					<img src="images/ic-on-campus.svg">
+				</div>
+				<div>
+					<img src="images/ic-online.svg">
+				</div>
+				<div>
+					<img src="images/ic-login.svg">
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="hero bg-zinc-300 md:flex">
+				<div class="md:pt-8 md:pb-8 md:pl-6 md:w-[60dvw]">
+					<img src="images/banner.jpg" alt="banner">
+				</div>
+				<div class="pl-4 pr-4 pt-8 pb-8 md:pl-6 md:mt-auto md:m-auto">
+					<h2 class="text-4xl md:text-5xl">
+						Learn something <br>new everyday
+					</h2>
+					<p class="mt-8 mb-6 text-2xl font-semibold text-zinc-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<button class="w-full text-center bg-zinc-400 text-white p-2 text-xl md:text-2xl md:font-light md:w-110">
+						Start here
+					</button>
+				</div>
+			</section>
+			<section class="information  pt-4 pb-8 md:flex">
+				<section class="hidden md:block md:pl-6">
+					<div class="w-[60dvw]">
+						<img src="images/information-main.jpg">
+					</div>
+				</section>
+				<section class="flex flex-col pl-4 pr-4 md:w-[40%]">
+					<section class="pb-16 md:flex md:pb-4">
+						<div class="md:hidden">
+							<img src="images/information-orientation-mobile.jpg">
+						</div>
+						<div class="hidden md:block md:h-auto md:w-[35%]">
+							<img src="images/information-orientation.jpg">
+						</div>
+						<div class="info_img_desc md:w-[65%] md:mt-auto md:mb-auto">
+							<h3>Orientation date</h3>
+							<p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+							<a>Read more</a>
+						</div>
+					</section>
+					<section class="pb-16">
+						<div class="md:hidden">
+							<img src="images/information-campus-mobile.jpg">
+						</div>
+						<div class="info_img_desc">
+							<h3>Our campus</h3>
+							<p>Find which campus is close by you</p>
+							<a>Read more</a>
+						</div>
+					</section>
+					<section>
+						<div class="md:hidden">
+							<img src="images/information-guest-lecture-mobile.jpg">
+						</div>
+						<div class="info_img_desc">
+							<h3>Special guest lecture</h3>
+							<p>Join a keynote with Oliver Sack about music in medical treatment</p>
+							<a>Read more</a>
+						</div>
+					</section>
+				</section>
+			</section>
+			<section class="course flex flex-col bg-zinc-50 border border-zinc-200 pt-8 pb-8 pl-4 pr-4 text-zinc-700">
+				<h2 class="text-4xl text-center mb-4">Start learning</h2>
+				<div>
+					<h3>Software engineering</h3>
+					<h3>Computer art</h3>
+					<h3>Design</h3>
+					<h3>Data</h3>
+					<h3>Business</h3>
+					<h3 >Marketing</h3>
+				</div>
+			</section>
+			<section class="thesis">
+				<h2 class=" text-4xl pt-8 pb-4 text-center">Thesis exhibits</h2>
+				<video controls class="mb-6">
+					<source src="videos/thesis.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</section>
+		</main>
+		<footer>
+			<div class="p-4">
+				<p>© 2016 Colmar Academy. All rights reserved</p>
+			</div>
+		</footer>
 	</body>
 </html>
