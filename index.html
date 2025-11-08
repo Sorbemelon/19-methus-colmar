@@ -29,54 +29,54 @@
 		</style>
 	</head>
 
-	<body class="w-screen min-h-dvh">
+	<body class="max-w-screen min-h-dvh">
 		<header class="mb-16">
-			<nav class="flex items-center justify-around bg-white overflow-hidden fixed top-0 w-full h-16 md:justify-start">
+			<nav class="z-100 flex items-center justify-around bg-white overflow-hidden fixed top-0 w-full h-16 md:justify-start">
 				<div class="md:ml-6 hover:cursor-pointer">
-					<a href="index.html"><img src="images/ic-logo.svg" alt="icon logo" class=" w-8 md:w-10"></a>
+					<a href="#hero"><img src="images/ic-logo.svg" alt="icon logo" class=" w-8 md:w-10"></a>
 				</div>
 				<div class="md:hidden hover:cursor-pointer">
-					<a href="campus.html"><img src="images/ic-on-campus.svg" alt="icon on-campus" class=" w-8"></a>
+					<a href=""><img src="images/ic-on-campus.svg" alt="icon on-campus" class=" w-8"></a>
 				</div>
 				<div class="md:hidden hover:cursor-pointer">
-					<a href="online.html"><img src="images/ic-online.svg" alt="icon online" class=" w-8"></a>
+					<a href=""><img src="images/ic-online.svg" alt="icon online" class=" w-8"></a>
 				</div>
 				<div class="md:hidden hover:cursor-pointer">
-					<a href="login.html"><img src="images/ic-login.svg" alt="icon login" class=" w-8"></a>
+					<a href=""><img src="images/ic-login.svg" alt="icon login" class=" w-8"></a>
 				</div>
 				<div class="hidden md:flex text-[32px] hover:cursor-pointer">
-					<a href="index.html"><p class="font-semibold text-zinc-700">COLMAR</p></a>
-					<a href="index.html"><p class="text-zinc-400">ACADEMY</p></a>
+					<a href="#hero"><p class="font-semibold text-zinc-700">COLMAR</p></a>
+					<a href="#hero"><p class="text-zinc-400">ACADEMY</p></a>
 				</div>
 				<ul class="hidden md:flex ml-auto gap-4 md:text-lg md:font-medium md:text-zinc-600">
-					<a href="campus.html"><li class="hover:cursor-pointer hover:font-bold">On campus</li></a>
-					<a href="online.html"></a><li class="hover:cursor-pointer hover:font-bold">Online</li>
-					<a href="companies.html"></a><li class="hover:cursor-pointer hover:font-bold">or companies</li>
-					<a href="login.html"></a><li class="mr-6 hover:cursor-pointer hover:font-bold">Sign in</li>
+					<a href=""><li class="hover:cursor-pointer hover:font-bold active:text-black">On campus</li></a>
+					<a href=""></a><li class="hover:cursor-pointer hover:font-bold active:text-black">Online</li>
+					<a href=""></a><li class="hover:cursor-pointer hover:font-bold active:text-black">or companies</li>
+					<a href=""></a><li class="mr-6 hover:cursor-pointer hover:font-bold active:text-black">Sign in</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section id="hero" class="md:flex bg-zinc-300">
-				<div class="md:pt-8 md:pb-8 md:pl-6 md:pr-6 md:w-[60%]">
-					<img src="images/banner.jpg" alt="banner image">
+			<section id="hero" class="md:flex bg-zinc-300 scroll-mt-16">
+				<div class="md:px-6 md:py-8 md:w-[60%]">
+					<img src="images/banner.jpg" alt="banner image" class="md:w-full">
 				</div>
-				<div class="pl-4 pr-4 pt-8 pb-8 md:pl-0 md:mt-auto md:m-auto md:w-[40%]">
+				<div class="px-4 py-8 md:w-[40%] md:pl-0 md:m-auto">
 					<h2 class="text-4xl font-bold text-zinc-700 leading-14 md:text-5xl">
 						Learn something <br>new everyday
 					</h2>
 					<p class="mt-8 mb-6 text-2xl font-bold text-zinc-700 leading-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 					<a href="#course">
-						<button class="w-full p-2 text-center text-xl bg-zinc-400 text-white md:text-2xl md:font-light md:bg-zinc-600 md:w-110 hover:cursor-pointer hover:bg-zinc-500">
+						<button class="w-full bg-zinc-400 p-2 text-center text-xl text-white md:text-2xl md:font-light md:bg-zinc-600 md:max-w-110 duration-100 hover:cursor-pointer hover:bg-zinc-500 active:bg-zinc-400 active:shadow-md active:text-black">
 						Start here
 					</button>
 					</a>
 				</div>
 			</section>
 			<section id="information" class="md:flex">
-				<section class="hidden md:block w-[60dvw] md:pl-6 md:pt-8 md:pr-6 ">
+				<section class="hidden md:block w-[60%] md:px-6 md:pt-8">
 					<div>
-						<img src="images/information-main.jpg" alt="information main image">
+						<img src="images/information-main.jpg" alt="information main image" class="md:w-full">
 					</div>
 					<div>
 						<h2 class="mt-8 mb-6 text-5xl font-bold text-zinc-700">It doesn't hurt to keep practicing</h2>
@@ -84,119 +84,119 @@
 						<p class="mt-6 mb-8 text-lg text-zinc-900">Emanuel, Sr Strategist at Hiring.com</p>
 					</div>
 				</section>
-				<section class="flex flex-col md:pt-8 md:w-[40dvw] md:border md:border-zinc-100">
-					<section class="pb-16 pl-4 pr-4 pt-4 md:flex md:p-4 md:border md:border-zinc-100 hover:cursor-pointer hover:bg-zinc-200">
+				<section class="flex flex-col md:pt-8 md:w-[40%] md:border md:border-zinc-100">
+					<section class="mt-4 pb-16 mx-4 text-zinc-600 md:flex md:p-4 md:border md:border-zinc-100 duration-100 hover:scale-105 hover:bg-zinc-200 hover:text-zinc-900">
 						<div class="md:hidden">
-							<img src="images/information-orientation-mobile.jpg" alt="information orientation mobile image">
+							<img src="images/information-orientation-mobile.jpg" alt="information orientation mobile image" class="w-full">
 						</div>
 						<div class="hidden md:block md:h-auto md:w-[35%]">
-							<img src="images/information-orientation.jpg" alt="information orientation desktop image">
+							<img src="images/information-orientation.jpg" alt="information orientation desktop image" class="md:w-full">
 						</div>
-						<div class="pt-4 pl-4 md:w-[65%] md:mt-auto md:mb-auto">
+						<div class="pt-4 pl-4 md:w-[65%] md:my-auto">
 							<h3 class="text-2xl font-semibold text-zinc-700">Orientation date</h3>
-							<p class="pt-2 pb-2 text-xl text-zinc-600">Tue 10/11 & Wed 10/12: 8am-3pm</p>
-							<a class="mt-1 font-xl text-blue-500">Read more</a>
+							<p class="py-2 text-lg">Tue 10/11 & Wed 10/12: 8am-3pm</p>
+							<a class="mt-1 text-lg text-blue-500 duration-50 hover:cursor-pointer hover:underline hover:text-xl hover:font-medium active:text-lg active:text-shadow-2xs">Read more</a>
 						</div>
 					</section>
-					<section class="pb-16 pl-4 pr-4 md:flex md:p-4 md:border md:border-zinc-100 hover:cursor-pointer hover:bg-zinc-200">
+					<section class="pb-16 mx-4 text-zinc-600 md:flex md:p-4 md:border md:border-zinc-100 duration-100 hover:scale-105 hover:bg-zinc-200 hover:text-zinc-900">
 						<div class="md:hidden">
-							<img src="images/information-campus-mobile.jpg" alt="information campus mobile image">
+							<img src="images/information-campus-mobile.jpg" alt="information campus mobile image" class="w-full">
 						</div>
 						<div class="hidden md:block md:h-auto md:w-[35%]">
-							<img src="images/information-campus.jpg" alt="information campus desktop image">
+							<img src="images/information-campus.jpg" alt="information campus desktop image" class="md:w-full">
 						</div>
 						<div class="pt-4 pl-4 md:w-[65%] md:mt-auto md:mb-auto">
 							<h3 class="text-2xl font-semibold text-zinc-700">Our campus</h3>
-							<p class="pt-2 pb-2 text-xl text-zinc-600">Find which campus is close by you</p>
-							<a class="mt-1 font-xl text-blue-500">Read more</a>
+							<p class="py-2 text-lg">Find which campus is close by you</p>
+							<a class="mt-1 text-lg text-blue-500 duration-50 hover:cursor-pointer hover:underline hover:text-xl hover:font-medium active:text-lg active:text-shadow-2xs">Read more</a>
 						</div>
 					</section>
-					<section class="pl-4 pr-4 pb-8 md:flex md:p-4 md:border md:border-zinc-100 hover:cursor-pointer hover:bg-zinc-200">
+					<section class="pb-8 mx-4 text-zinc-600 md:flex md:p-4 md:border md:border-zinc-100 duration-100 hover:scale-105 hover:bg-zinc-200 hover:text-zinc-900">
 						<div class="md:hidden">
-							<img src="images/information-guest-lecture-mobile.jpg" alt="information guest lecture mobile image">
+							<img src="images/information-guest-lecture-mobile.jpg" alt="information guest lecture mobile image" class="w-full">
 						</div>
 						<div class="hidden md:block md:h-auto md:w-[35%]">
-							<img src="images/information-guest-lecture.jpg" alt="information guest lecture desktop image">
+							<img src="images/information-guest-lecture.jpg" alt="information guest lecture desktop image" class="md:w-full">
 						</div>
 						<div class="pt-4 pl-4 md:w-[65%] md:mt-auto md:mb-auto">
 							<h3 class="text-2xl font-semibold text-zinc-700">Special guest lecture</h3>
-							<p class="pt-2 pb-2 text-xl text-zinc-600">Join a keynote with Oliver Sack about music in medical treatment</p>
-							<a class="mt-1 font-xl text-blue-500">Read more</a>
+							<p class="py-2 text-lg">Join a keynote with Oliver Sack about music in medical treatment</p>
+							<a class="mt-1 text-lg text-blue-500 duration-50 hover:cursor-pointer hover:underline hover:text-xl hover:font-medium active:text-lg active:text-shadow-2xs">Read more</a>
 						</div>
 					</section>
 				</section>
 			</section>
-			<section id="course" class="flex flex-col bg-zinc-50 pt-8 pb-8 border border-zinc-100 md:bg-zinc-100">
+			<section id="course" class="flex flex-col bg-zinc-50 py-8 border border-zinc-100 md:bg-zinc-100 scroll-mt-16">
 				<h2 class="mb-4 text-center text-4xl font-bold text-zinc-700 md:mb-8">
 					Start learning
 				</h2>
-				<section class="pl-4 pr-4 text-zinc-700 md:hidden">
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Software engineering</h3>
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Computer art</h3>
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Design</h3>
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Data</h3>
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Business</h3>
-					<h3 class="pt-4 pb-6 pl-4 mb-2 text-2xl font-semibold bg-zinc-300 hover:cursor-pointer hover:bg-zinc-500 hover:text-white">Marketing</h3>
+				<section class="px-4 text-zinc-700 md:hidden">
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Software engineering</h3>
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Computer art</h3>
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Design</h3>
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Data</h3>
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Business</h3>
+					<h3 class="pt-4 pb-6 pl-4 mb-2 bg-zinc-300 text-2xl font-semibold duration-100 hover:cursor-pointer hover:bg-zinc-500 hover:text-white active:bg-zinc-400">Marketing</h3>
 				</section>
-				<section class="hidden md:grid md:grid-cols-3 gap-8 pl-18 pr-18">
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+				<section class="hidden md:grid md:grid-cols-3 gap-8 px-18">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-software.jpg" alt="course software engineer image">
+							<img src="images/course-software.jpg" alt="course software engineer image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Software engineering</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">Web Development, Mobile Development, iOT, APIs</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">Web Development, Mobile Development, iOT, APIs</p>
 						</div>
 					</div>
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-computer-art.jpg" alt="course computer art image">
+							<img src="images/course-computer-art.jpg" alt="course computer art image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Computer art</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
 						</div>
 					</div>
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-design.jpg" alt=" course design image">
+							<img src="images/course-design.jpg" alt="course design image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Design</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">User Experience Design, User Research, Visual Design</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">User Experience Design, User Research, Visual Design</p>
 						</div>
 					</div>
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-data.jpg" alt="course data image">
+							<img src="images/course-data.jpg" alt="course data image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Data</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">Data Science, Big Data SQL, Data visualization</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">Data Science, Big Data SQL, Data visualization</p>
 						</div>
 					</div>
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-business.jpg" alt="course business image">
+							<img src="images/course-business.jpg" alt="course business image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Business</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">Product Development, Business Development, Startup</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">Product Development, Business Development, Startup</p>
 						</div>
 					</div>
-					<div class="bg-white hover:cursor-pointer hover:bg-zinc-200">
+					<div class="bg-white text-zinc-500 duration-100 hover:cursor-pointer hover:border hover:border-zinc-600 hover:shadow-md hover:text-zinc-800 hover:scale-105 active:scale-100">
 						<div class="h-auto">
-							<img src="images/course-marketing.jpg" alt="course marketing image">
+							<img src="images/course-marketing.jpg" alt="course marketing image" class="w-full">
 						</div>
-						<div class="pt-4 pl-4 pb-6 pr-4">
+						<div class="pt-4 pb-6 px-4">
 							<h3 class="text-3xl font-semibold text-zinc-800">Marketing</h3>
-							<p class="pt-2 text-2xl text-zinc-500">COURSES</p>
-							<p class="pt-2 text-2xl text-zinc-500">Analytics, Content Marketing, Mobile Marketing</p>
+							<p class="pt-2 text-[1.4rem]">COURSES</p>
+							<p class="pt-2 text-[1.4rem]">Analytics, Content Marketing, Mobile Marketing</p>
 						</div>
 					</div>
 				</section>
@@ -206,8 +206,8 @@
 					Thesis exhibit
 				</h2>
 				<section class="md:flex">
-					<section class="md:pl-6 md:pr-6 md:w-[60dvw]">
-						<video controls class="mb-6 hover:cursor-pointer">
+					<section class="md:px-6 md:w-[60%]">
+						<video controls muted preload="auto" class="mb-6 duration-100 hover:cursor-pointer w-full hover:shadow-xl">
 							<source src="videos/thesis.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
@@ -216,23 +216,27 @@
 							<p class="pt-2 pb-8 text-lg text-zinc-500">"Curabitur vel ligula luctus, porta justo ut, feugiat nisl. Fusce vulputate sapien sed dui ullam corper auctor. Praesent sed fringilla felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."</p>
 						</div>
 					</section>
-					<section class="hidden md:flex md:flex-col md:w-[40dvw]">
-						<section class="flex hover:cursor-pointer hover:bg-zinc-200">
-							<div class="h-auto w-[35%] p-4">
-								<img src="images/thesis-fisma.jpg" alt="thesis fisma image">
-							</div>
-							<div class="mt-auto mb-auto pr-18 w-[65%]">
-								<h3 class="text-3xl font-medium text-zinc-700">Fisma: Design and prototype</h3>
-								<p class="pt-4 text-xl text-zinc-500">Designer showcase of new prototype product</p>
+					<section class="hidden md:flex md:flex-col md:w-[40%]">
+						<section class="pl-4 text-zinc-500 duration-100 hover:cursor-pointer hover:scale-105 hover:bg-zinc-200 hover:text-zinc-900 active:scale-100">
+							<div class="grid grid-cols-[1fr_65%]">
+								<div class="h-auto my-4">
+									<img src="images/thesis-fisma.jpg" alt="thesis fisma image" class="w-full">
+								</div>
+								<div class="my-auto pl-4 pr-auto">
+									<h3 class="text-3xl font-medium text-zinc-700">Fisma: Design and prototype</h3>
+									<p class="pt-4 text-xl">Designer showcase of new prototype product</p>
+								</div>
 							</div>
 						</section>
-						<section class="flex hover:cursor-pointer hover:bg-zinc-200">
-							<div class="h-auto w-[35%] p-4">
-								<img src="images/thesis-now-and-then.jpg" alt="thesis now and then image">
-							</div>
-							<div class="mt-auto mb-auto pr-18 w-65%]">
-								<h3 class="text-3xl font-medium text-zinc-700">Now and then</h3>
-								<p class="pt-4 text-xl text-zinc-500">Research study about New York</p>
+						<section class="pl-4 text-zinc-500 duration-100 hover:cursor-pointer hover:scale-105 hover:bg-zinc-200 hover:text-zinc-900 active:scale-100">
+							<div class="grid grid-cols-[1fr_65%]">
+								<div class="h-auto my-4">
+									<img src="images/thesis-now-and-then.jpg" alt="thesis now and then image" class="w-full">
+								</div>
+								<div class="my-auto pl-4 pr-auto">
+									<h3 class="text-3xl font-medium text-zinc-700">Now and then</h3>
+									<p class="pt-4 text-xl">Research study about New York</p>
+								</div>
 							</div>
 						</section>
 					</section>
